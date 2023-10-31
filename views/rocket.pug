@@ -2,4 +2,20 @@ extends layout
 
 block content
   h1= title
-  
+  -
+  let results = [
+     {Rocket_Type:'Solid fuel chemical propulsion', Speed: 3000 ,Fuel_Capacity: 209,000 },
+     {Rocket_Type:'Liquid fuel chemical propulsion', Speed:4000 ,Fuel_Capacity: 334,500 },
+     {Rocket_Type:'Cold-gas chemical propulsion', Speed:4500 ,Fuel_Capacity: 400,000 },
+    ]
+.container-fluid
+.row
+- each item in results
+.col-sm-2
+h2 #{item.name}
+p #{item.description}
+
+
+
+
+

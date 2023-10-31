@@ -6,5 +6,5 @@ Class: Rockets
 Attributes:
 
 Rocket_Type (string)
-Range (number)
+Speed (number)
 Fuel_Capacity (number)
