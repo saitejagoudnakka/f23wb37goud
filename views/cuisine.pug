@@ -8,5 +8,5 @@ block content
       each food, index in tastyFoods
         div(class="col-sm-2" onclick=`eat(${index})`) #{food.type}, #{food.name}, #{food.country}
       script.
-        function eat(a) {
+       function eat(a) {
           alert(`You enjoyed the ${cuisine[a].type} food!`)}
