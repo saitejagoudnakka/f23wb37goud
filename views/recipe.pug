@@ -8,10 +8,12 @@ block content
     div(class="container-fluid")
         div(class="row")
             each food, index in Recipe
-                div(class="col-sm-2" onclick =`order(${index})`) #{food.type}, #{food.name}, #{food.price}Rs       
+                div(class="col-sm-2" onclick =`buy(${index})`) #{food.type}, #{food.name}, #{food.price}Rs       
                 script.
-                    function order(a)
-                    {
-                         alert(`You enjoyed the ${a+1} food!`);
-                    }
+                 function eat(a) {
+                   console.log(alert(`You enjoyed the ${tastyFoods[a].taste} food!`))}
+
+
+
+                    
                     
