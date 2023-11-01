@@ -7,11 +7,13 @@ block content
 
     div(class="container-fluid")
         div(class="row")
-            each food in Recipe
-                div(class="col-sm-2") #{food.type}
-                div(class="col-sm-2") #{food.name}
-                div(class="col-sm-2") #{food.price} Rs 
-
+            each food,index in Recipe
+            
+                div(class="col-sm-2" onclick =`eat(${index})`) #{food.type}
+                div(class="col-sm-2" onclick =`eat(${index})`) #{food.name}
+                div(class="col-sm-2" onclick =`eat(${index})`) #{food.price} Rs 
     script.
-        function eat(a) {
-        alert(`You enjoyed the ${Recipe[a].type} food!`)}
+        function eat(a)
+         {
+            alert(`You enjoyed the ${Recipe[a].type} food!`)
+        }
