@@ -10,10 +10,10 @@ block content
             each food, index in Recipe
                 div(class="col-sm-2" onclick =`buy(${index})`) #{food.type}, #{food.name}, #{food.price}Rs       
                 script.
-                 function eat(a) {
-                   console.log(alert(`You enjoyed the ${tastyFoods[a].taste} food!`))}
-
-
+                 function buy(a)
+                 {
+                   alert(`You purchased Item ${a+1}`)
+                 }
 
                     
                     
