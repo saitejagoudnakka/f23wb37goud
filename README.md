@@ -3,11 +3,11 @@ http://localhost:3000/
 https://f23wb37goud.onrender.com/
 class Cuisine {
     String type;
-    String taste;
+    String name;
     String country;
   constructor(type, taste, country) {
     this.type = type;         
-    this.taste = taste;      
+    this.name = name;      
     this.country = country;  
   }
 
