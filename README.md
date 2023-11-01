@@ -5,10 +5,10 @@ class Cuisine {
     String type;
     String name;
     String country;
-  constructor(type, taste, country) {
+  constructor(type, taste, price) {
     this.type = type;         
     this.name = name;      
-    this.country = country;  
+    this.price = price;  
   }
 
 }

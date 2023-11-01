@@ -1,12 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  - var cuisine  = [{type: "Indian", name: "Dosa", country: "India"},{type: "Italian", name: "Pasta", country: "Italy"},{type: "chinese", name: "noodles", country: "china"}]
-  div(class="container-fluid")
-    div(class="row")
-      each food, index in tastyFoods
-        div(class="col-sm-2" onclick=`eat(${index})`) #{food.type}, #{food.name}, #{food.country}
-      script.
-       function eat(a) {
-          alert(`You enjoyed the ${cuisine[a].type} food!`)}
+    h1= title
+    -
+        var cuisine  = [{"type": "Indian", "name": "Dosa", "price": 50},{"type": "Italian", "name": "Pasta", "price": 200},{"type": "chinese", "name": "noodles", "price": 150}]
+
+    div(class="container-fluid")
+        div(class="row")
+            each food in cuisine
+                div(class="col-sm-2") #{food.type}
+                div(class="col-sm-2") #{food.name}
+                div(class="col-sm-2") #{food.price} Rs 
+
+    script.
+        function eat(a) {
+        alert(`You enjoyed the ${cuisine[a].type} food!`)}
